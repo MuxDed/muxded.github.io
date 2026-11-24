@@ -2,7 +2,6 @@
 .claude/skills/
 .claude/settings.local.json
 .taste-skill/
-.impeccable/
 .playwright-mcp/
 
 # Node / test output

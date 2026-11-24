@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T18:00:00Z",
+  "title": "Design System: Mikhail Dyuldin",
+  "extensions": {
+    "colorMeta": {
+      "board": {
+        "role": "neutral",
+        "displayName": "Board Black",
+        "canonical": "#0b0c0e",
+        "tonalRamp": [
+          "#060708",
+          "#0b0c0e",
+          "#16181b",
+          "#25282d",
+          "#43464c",
+          "#6c6f75",
+          "#a3a5aa",
+          "#e1e2e4"
+        ]
+      },
+      "flap": {
+        "role": "neutral",
+        "displayName": "Flap Grey",
+        "canonical": "#1b1d21",
+        "tonalRamp": [
+          "#0b0c0e",
+          "#1b1d21",
+          "#2a2d32",
+          "#3c4047",
+          "#585c63",
+          "#7f8389",
+          "#b1b4b9",
+          "#e4e5e8"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Seam Black",
+        "canonical": "#060708",
+        "tonalRamp": [
+          "#030304",
+          "#060708",
+          "#101113",
+          "#1d1f22",
+          "#373a3e",
+          "#606368",
+          "#9a9ca0",
+          "#dddee0"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Board Rule",
+        "canonical": "#25282d",
+        "tonalRamp": [
+          "#0e0f11",
+          "#1a1c20",
+          "#25282d",
+          "#34383e",
+          "#50545b",
+          "#787c83",
+          "#adb0b5",
+          "#e3e4e7"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Flap White",
+        "canonical": "#ecebe4",
+        "tonalRamp": [
+          "#1d1d1a",
+          "#3a3a35",
+          "#5e5d56",
+          "#85847c",
+          "#aeada5",
+          "#cfcec6",
+          "#ecebe4",
+          "#f8f8f4"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Grey",
+        "canonical": "#b9b8b0",
+        "tonalRamp": [
+          "#1c1c1a",
+          "#363632",
+          "#57564f",
+          "#7c7b74",
+          "#a19f98",
+          "#b9b8b0",
+          "#d8d7d1",
+          "#f3f2ee"
+        ]
+      },
+      "dim": {
+        "role": "neutral",
+        "displayName": "Dim Grey",
+        "canonical": "#8a8b86",
+        "tonalRamp": [
+          "#1a1a19",
+          "#32332f",
+          "#4f504b",
+          "#6e6f6a",
+          "#8a8b86",
+          "#a9aaa5",
+          "#cdcec9",
+          "#f0f0ed"
+        ]
+      },
+      "amber": {
+        "role": "primary",
+        "displayName": "Signal Amber",
+        "canonical": "#f4c430",
+        "tonalRamp": [
+          "#2e2206",
+          "#54400c",
+          "#7d5f12",
+          "#a88118",
+          "#d3a422",
+          "#f4c430",
+          "#f9da7a",
+          "#fdf1cc"
+        ]
+      },
+      "amber-hi": {
+        "role": "primary",
+        "displayName": "Lit Amber",
+        "canonical": "#ffd659",
+        "tonalRamp": [
+          "#30260a",
+          "#584713",
+          "#82691c",
+          "#ad8c26",
+          "#d9b031",
+          "#ffd659",
+          "#ffe592",
+          "#fff5d6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display tiles",
+        "purpose": "Large split-flap tiles: the name, NEXT DEPARTURE / YOUR PROJECT."
+      },
+      "headline": {
+        "displayName": "Headline tiles",
+        "purpose": "Small split-flap tiles: section heads, role line, status value."
+      },
+      "action": {
+        "displayName": "Gate address",
+        "purpose": "The email address as the amber primary action."
+      },
+      "title": {
+        "displayName": "Row item",
+        "purpose": "ITEM cells of board rows."
+      },
+      "figure": {
+        "displayName": "Row figure",
+        "purpose": "FIGURE cells: the hard numbers."
+      },
+      "status": {
+        "displayName": "Row status",
+        "purpose": "STATUS cells, right-aligned, amber or dim."
+      },
+      "code": {
+        "displayName": "Row code",
+        "purpose": "Three-letter CODE cells."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The single hero paragraph, max 38ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Row details and short prose, max 60ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Strip, field labels, column headers, footer."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "The only easing curve: flips, slide-ins, UI state, background rows."
+      },
+      {
+        "name": "flip",
+        "value": "90ms",
+        "purpose": "One character flip: rotateX(-75deg) to flat, opacity 0.35 to 1."
+      },
+      {
+        "name": "flip-cadence",
+        "value": "55ms",
+        "purpose": "Interval between random characters while a cell cycles (3 to 7 steps)."
+      },
+      {
+        "name": "flip-stagger",
+        "value": "26ms + 0-40ms jitter",
+        "purpose": "Left-to-right start offset per cell in a revealed row."
+      },
+      {
+        "name": "bg-stagger",
+        "value": "18ms",
+        "purpose": "Per-cell offset when a background row re-flips."
+      },
+      {
+        "name": "bg-update",
+        "value": "1400ms",
+        "purpose": "Background board update interval; probability falls with scroll progress."
+      },
+      {
+        "name": "state",
+        "value": "160ms",
+        "purpose": "Button fill, press scale (0.97), link colour."
+      },
+      {
+        "name": "underline",
+        "value": "260ms",
+        "purpose": "Gate email underline draw on hover."
+      },
+      {
+        "name": "slide",
+        "value": "700ms",
+        "purpose": "Prose reveal: 14px rise, fade, clip from below; 70ms per row + 80ms."
+      },
+      {
+        "name": "row-fade",
+        "value": "900ms",
+        "purpose": "Background rows leaving: opacity 0, scaleY 0.6. 300ms under reduced motion."
+      },
+      {
+        "name": "final-row-place",
+        "value": "per scroll",
+        "purpose": "The converged last background row moves to the centre of the final section's top padding, clamped 24px inside the viewport, at 40% opacity."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "900px"
+      },
+      {
+        "name": "max-content",
+        "value": "1440px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Split-flap tiles",
+      "kind": "custom",
+      "refersTo": "tile-small",
+      "description": "Each character on its own plate with a seam through the middle; words separated by a blank tile.",
+      "html": "<p class=\"ds-tiles\" aria-label=\"Available\"><span class=\"ds-t\"><i>A</i></span><span class=\"ds-t\"><i>V</i></span><span class=\"ds-t\"><i>A</i></span><span class=\"ds-t\"><i>I</i></span><span class=\"ds-t\"><i>L</i></span></p>",
+      "css": ".ds-tiles { --tile: 30px; display: flex; gap: calc(var(--tile) * .1); margin: 0; font-family: var(--narrow, 'Archivo Narrow', sans-serif); font-weight: 700; text-transform: uppercase; color: var(--ink, #ecebe4); } .ds-t { position: relative; display: inline-grid; place-items: center; width: var(--tile); height: calc(var(--tile) * 1.44); background: var(--flap, #1b1d21); border-radius: calc(var(--tile) * .07); font-size: calc(var(--tile) * 1.12); line-height: 1; overflow: hidden; } .ds-t::after { content: ''; position: absolute; inset: 50% 0 auto; height: max(1px, calc(var(--tile) * .02)); background: var(--seam, #060708); } .ds-t > i { font-style: normal; }"
+    },
+    {
+      "name": "Amber status tiles",
+      "kind": "custom",
+      "refersTo": "tile-amber",
+      "description": "The tile component in signal amber, for availability and the final YOUR PROJECT.",
+      "html": "<p class=\"ds-tiles ds-tiles--amber\" aria-label=\"Open\"><span class=\"ds-t\"><i>O</i></span><span class=\"ds-t\"><i>P</i></span><span class=\"ds-t\"><i>E</i></span><span class=\"ds-t\"><i>N</i></span></p>",
+      "css": ".ds-tiles { --tile: 30px; display: flex; gap: calc(var(--tile) * .1); margin: 0; font-family: var(--narrow, 'Archivo Narrow', sans-serif); font-weight: 700; } .ds-tiles--amber { color: var(--amber, #f4c430); } .ds-t { position: relative; display: inline-grid; place-items: center; width: var(--tile); height: calc(var(--tile) * 1.44); background: var(--flap, #1b1d21); border-radius: calc(var(--tile) * .07); font-size: calc(var(--tile) * 1.12); line-height: 1; overflow: hidden; } .ds-t::after { content: ''; position: absolute; inset: 50% 0 auto; height: max(1px, calc(var(--tile) * .02)); background: var(--seam, #060708); } .ds-t > i { font-style: normal; }"
+    },
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Amber mailto button with a square arrow; the only filled control.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><span>Email to book</span><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 10h11M11 5l5 5-5 5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 12px; padding: 18px 24px 18px 28px; background: var(--amber, #f4c430); color: var(--board, #0b0c0e); border-radius: 4px; font: 700 17px/1 var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease; } .ds-btn svg { transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn:hover { background: var(--amber-hi, #ffd659); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 2px solid var(--amber, #f4c430); outline-offset: 4px; }"
+    },
+    {
+      "name": "Gate email link",
+      "kind": "custom",
+      "refersTo": "gate-mail",
+      "description": "The address as the primary action; underline draws from the left on hover.",
+      "html": "<a class=\"ds-gate-mail\" href=\"#\">name@example.com</a>",
+      "css": ".ds-gate-mail { font: 600 clamp(24px, 3.1vw, 44px)/1.1 var(--narrow, 'Archivo Narrow', sans-serif); color: var(--amber, #f4c430); text-decoration: none; overflow-wrap: anywhere; background: linear-gradient(currentColor, currentColor) 0 100% / 0 2px no-repeat; transition: background-size 260ms cubic-bezier(0.23, 1, 0.32, 1), color 160ms ease; } .ds-gate-mail:hover { background-size: 100% 2px; color: var(--amber-hi, #ffd659); } .ds-gate-mail:focus-visible { outline: 2px solid var(--amber, #f4c430); outline-offset: 4px; border-radius: 2px; }"
+    },
+    {
+      "name": "Board row",
+      "kind": "custom",
+      "refersTo": "row-item",
+      "description": "Ruled table row: CODE, ITEM, DETAIL, FIGURE, STATUS on a shared 30px line.",
+      "html": "<table class=\"ds-rows\"><thead><tr><th>Code</th><th>Item</th><th>Detail</th><th>Figure</th><th>Status</th></tr></thead><tbody><tr><td class=\"ds-code\">PAY</td><th class=\"ds-item\">Payments integrations</th><td class=\"ds-detail\">Payouts, refunds and webhooks, built idempotent.</td><td class=\"ds-fig\">30% of bookings</td><td class=\"ds-status\">Landed</td></tr><tr><td class=\"ds-code\">GAM</td><th class=\"ds-item\">Indie games</th><td class=\"ds-detail\">Small playable prototypes.</td><td class=\"ds-fig\">-</td><td class=\"ds-status ds-status--quiet\">In progress</td></tr></tbody></table>",
+      "css": ".ds-rows { width: 100%; border-collapse: collapse; text-align: left; background: var(--board, #0b0c0e); } .ds-rows thead th { padding: 0 32px 14px 0; font: 600 12px/1 var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--dim, #8a8b86); } .ds-rows thead th:last-child, .ds-rows td.ds-status { text-align: right; padding-right: 0; } .ds-rows tbody tr { border-top: 1px solid var(--rule, #25282d); } .ds-rows tbody tr:last-child { border-bottom: 1px solid var(--rule, #25282d); } .ds-rows td, .ds-rows tbody th { padding: 26px 32px 26px 0; vertical-align: top; } .ds-code { width: 64px; font: 700 15px/30px var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .08em; color: var(--dim, #8a8b86); } .ds-item { width: 330px; font: 600 25px/30px var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .02em; text-transform: uppercase; color: var(--ink, #ecebe4); text-wrap: balance; } .ds-detail { font: 400 17px/26px var(--sans, 'Archivo', sans-serif); color: var(--body, #b9b8b0); max-width: 60ch; text-wrap: pretty; } .ds-rows td.ds-detail { padding-top: 28px; } .ds-fig { width: 230px; font: 700 21px/30px var(--narrow, 'Archivo Narrow', sans-serif); text-transform: uppercase; color: var(--ink, #ecebe4); } .ds-status { width: 140px; font: 700 16px/30px var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .1em; text-transform: uppercase; color: var(--amber, #f4c430); white-space: nowrap; } .ds-status--quiet { color: var(--dim, #8a8b86); }"
+    },
+    {
+      "name": "Strip",
+      "kind": "nav",
+      "refersTo": "label",
+      "description": "Thin header row of dim labels with a live clock at the right; the only navigation surface.",
+      "html": "<header class=\"ds-strip\"><span>Departures</span><span>Contract engagements</span><span>Dublin <time>14:05</time></span></header>",
+      "css": ".ds-strip { display: flex; justify-content: space-between; align-items: center; padding-block: 32px 22px; border-bottom: 1px solid var(--rule, #25282d); background: var(--board, #0b0c0e); font: 600 13px/1 var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--dim, #8a8b86); } .ds-strip > :last-child { color: var(--ink, #ecebe4); }"
+    },
+    {
+      "name": "Facts list",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Dim field labels beside flap-white values, under the status tiles.",
+      "html": "<dl class=\"ds-facts\"><div><dt>From</dt><dd>Now</dd></div><div><dt>Mode</dt><dd>Remote, or hybrid Dublin</dd></div></dl>",
+      "css": ".ds-facts { margin: 0; display: grid; gap: 12px; background: var(--board, #0b0c0e); } .ds-facts div { display: grid; grid-template-columns: 72px 1fr; align-items: baseline; } .ds-facts dt { font: 600 13px/1 var(--narrow, 'Archivo Narrow', sans-serif); letter-spacing: .14em; text-transform: uppercase; color: var(--dim, #8a8b86); } .ds-facts dd { margin: 0; font: 500 17px/1.3 var(--sans, 'Archivo', sans-serif); color: var(--ink, #ecebe4); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Departures Board",
+    "overview": "The whole site is one engineer's departures board. The offer, the shipped record and the proof are posted as ruled board rows; the name and the availability status are spelled in split-flap tiles that cycle through characters before settling. Behind everything, a dim full-viewport board keeps flipping its own rows and thins out as the visitor scrolls, until a single row remains at the final section: the next departure is the visitor's project, and the gate is the email address.\n\nThe world is dark, flat and dense in the way a real station board is: two inks on black, one type family, hard horizontal rules, no imagery. Personality comes from the mechanism (tiles, seams, flips, columns) rather than from decoration. Amber is the signal colour of the board and is spent only on status and on the action.",
+    "keyCharacteristics": [
+      "Two inks on board black: flap white for characters, signal amber for status and the action only.",
+      "One family, Archivo: condensed uppercase (Archivo Narrow) for everything that lives on the board, normal-width Archivo for short prose.",
+      "Split-flap tiles with a hairline seam across the middle, sized from the viewport.",
+      "Content is tabular: ruled rows with CODE / ITEM / DETAIL / (FIGURE) / STATUS columns.",
+      "A living background board that converges to one row as the page ends.",
+      "Flat: no shadows, no gradients except the background board's edge mask."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Rule",
+        "body": "Amber marks status or the action, nothing else. If a piece of amber would not answer \"is he available?\" or \"how do I reach him?\", it is the wrong colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Ink Rule",
+        "body": "Characters are flap white or amber; prose steps down to body grey and meta to dim grey. No third hue enters the board.",
+        "section": "colors"
+      },
+      {
+        "name": "The Board Case Rule",
+        "body": "Everything posted on the board is uppercase Archivo Narrow; anything that reads as a sentence is sentence-case Archivo. Never set prose in the narrow cut or board items in the normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shared Line Rule",
+        "body": "Board row cells share a 30px line so CODE, ITEM, FIGURE and STATUS align on one baseline; DETAIL is offset 2px down (28px top padding) to sit on the same line. On small screens DETAIL drops to its own line, 6px below the first.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ragged Edge Rule",
+        "body": "Prose (lede, row details, closing line) uses pretty wrapping so no line ends on a lone word; row ITEMs use balanced wrapping so a two-line item splits evenly.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plate Rule",
+        "body": "A tile is a plate one tonal step above the board with a seam through it. It is never lifted with a shadow, border or glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do post new content as board rows with a three-letter CODE, an uppercase ITEM, a prose DETAIL and a STATUS.",
+      "Do spend amber only on status values and on the email action.",
+      "Do size tiles from the content width with the existing clamps (large: /10, 30 to 64px; small: /16, 19 to 30px) rather than fixed sizes.",
+      "Do keep the seam on every tile, including the background board.",
+      "Do keep the flip reveal accessible: visual cells hidden, real text available to assistive tech, settled text under reduced motion.",
+      "Do keep 1px board-rule horizontals as the only dividers."
+    ],
+    "donts": [
+      "Don't introduce a third ink or a second accent hue.",
+      "Don't add shadows, glows or borders to tiles or containers.",
+      "Don't set sentences in uppercase narrow type or board items in normal-width Archivo.",
+      "Don't wrap content in cards; the board is rows, not tiles of projects.",
+      "Don't move anything on a curve other than the house ease-out (plain ease is kept for colour changes only), or add motion that is not a flip, a slide-in, a row fade or a button press."
+    ]
+  }
+}

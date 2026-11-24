@@ -1,0 +1,15 @@
+# Local Claude tooling (third-party skills are installed locally, not published)
+.claude/skills/
+.claude/settings.local.json
+.taste-skill/
+.impeccable/
+.playwright-mcp/
+
+# Node / test output
+node_modules/
+test-results/
+playwright-report/
+
+# OS
+.DS_Store
+Thumbs.db
